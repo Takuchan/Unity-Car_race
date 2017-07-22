@@ -12,7 +12,7 @@ public class level1 : MonoBehaviour {
 
 
 	private int level = 1;
-	private float time = 51f;
+	private float time = 60f;
 
 
 	private int countBorder = 2000;

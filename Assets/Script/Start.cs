@@ -23,4 +23,8 @@ public class Start : MonoBehaviour {
 			yield return null;
 		}
 	}
+	public void syuryou(){
+		Application.Quit();
+		}
 }
+

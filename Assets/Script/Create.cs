@@ -38,16 +38,16 @@ public class Create: MonoBehaviour {
 
 	void CreateEnemy (){
 		if (Random.Range (0, 3) == 0) {
-			Instantiate (enemy1, new Vector3 (-5f, 0f, enemyBorder + 250f), enemy1.transform.rotation);
+			Instantiate (enemy1, new Vector3 (-5f, 0.67f, enemyBorder + 250f), enemy1.transform.rotation);
 		}
 		if (Random.Range (0, 3) == 0) {
-			Instantiate (enemy2, new Vector3 (-1.8f, 0f, enemyBorder + 250f), enemy2.transform.rotation);
+			Instantiate (enemy2, new Vector3 (-1.8f, 0.67f, enemyBorder + 250f), enemy2.transform.rotation);
 		}
 		if (Random.Range (0, 3) == 0) {
-			Instantiate (enemy3, new Vector3 (1.8f, 0f, enemyBorder + 250f), enemy3.transform.rotation);
+			Instantiate (enemy3, new Vector3 (1.8f, 0.07f, enemyBorder + 250f), enemy3.transform.rotation);
 		}
 		if (Random.Range (0, 3) == 0) {
-			Instantiate (enemy4, new Vector3 (5f, 0f, enemyBorder + 250f), enemy3.transform.rotation);
+			Instantiate (enemy4, new Vector3 (5f, 0.37f, enemyBorder + 250f), enemy3.transform.rotation);
 		}
 		enemyBorder += 80;
 	}

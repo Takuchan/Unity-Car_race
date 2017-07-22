@@ -1,17 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class move : MonoBehaviour {
 
 	public int level = 1;
 	public int speed = 0;
+	public Text mater;
+
 	float movePower = 0.2f;
 	bool jumppingFlug = true;
 	Rigidbody rb;
 
+
+
 	void Start() {
+		
 		rb = GetComponent<Rigidbody>();
+	
+
 	}
+
+
+
+
 
 	void FixedUpdate() {
 		if (Input.GetKey ("up")) {
@@ -65,6 +77,7 @@ public class move : MonoBehaviour {
 	void Jump() {
 		//jumppingFlug = false;
 		GetComponent<Rigidbody>().AddForce (Vector3.up * 100);
+
 	}
 	void OnTriggerEnter(Collider col) {
 		jumppingFlug = true;
